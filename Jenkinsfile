@@ -2,6 +2,9 @@ pipeline {
   agent {
     label 'jdk8'
   }
+  libraries {
+    lib("SharedLibs")
+  }
   stages {
     stage('Say Hello') {
       steps {
