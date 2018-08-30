@@ -34,6 +34,16 @@ pipeline {
         }
       }
     }
+    stage('Checkpoint') {
+      steps {
+        checkpoint 'Checkpoint'
+      }
+    }
+    stage('Deploy') {
+      steps {
+        echo 'Deploying....'
+      }
+    }
   }
   environment {
     MY_NAME = 'Mary'
