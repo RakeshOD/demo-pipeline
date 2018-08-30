@@ -24,6 +24,15 @@ pipeline {
              helloWorld("Jenkins")
          }
       }
+     stage('Development Tests') {
+         when {
+            beforeAgent true
+            branch 'development'
+         }
+         steps {
+            echo "Run the development tests!"
+         }
+      }
   }
   environment {
     MY_NAME = 'Mary'
