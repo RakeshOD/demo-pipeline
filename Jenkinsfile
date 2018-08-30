@@ -22,11 +22,7 @@ pipeline {
         echo 'Deploying....'
       }
     }
-    stage('Shared Lib') {
-         steps {
-             helloWorld("Jenkins")
-         }
-      }
+   
   }
   environment {
     MY_NAME = 'Mary'
