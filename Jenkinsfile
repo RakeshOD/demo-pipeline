@@ -11,7 +11,6 @@ pipeline {
         echo "${TEST_USER_PSW}"
       }
     }
-   
     stage('Checkpoint') {
       steps {
         checkpoint 'Checkpoint'
@@ -22,7 +21,6 @@ pipeline {
         echo 'Deploying....'
       }
     }
-   
   }
   environment {
     MY_NAME = 'Mary'
